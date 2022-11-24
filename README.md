@@ -18,3 +18,6 @@ You need to have node.js installed.
 The first time, you will need to install the package with `npm install`
 
 You can run tests with `npm test`
+
+You need to fix the .js files in the root folders.
+You may not commit any change the files in the spec/ folder (but you can edit the files if you want to try things out)
