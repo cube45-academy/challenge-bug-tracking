@@ -1,0 +1,22 @@
+{
+  "name": "challenge-bug-tracking",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cube45-academy/challenge-bug-tracking.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cube45-academy/challenge-bug-tracking/issues"
+  },
+  "homepage": "https://github.com/cube45-academy/challenge-bug-tracking#readme",
+  "devDependencies": {
+    "jasmine": "^4.5.0"
+  }
+}

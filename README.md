@@ -9,4 +9,12 @@ Some bugs are really nasty, and they disappear when you try to attach a debugger
 
 Good luck !
 
-Now, pick the branch corresponding of the language of your choice, and start hunting those bugs !
+## The javascript challenge
+
+This challenges uses [jasmine](https://jasmine.github.io/index.html) to test the code in the .js files.
+
+You need to have node.js installed.
+
+The first time, you will need to install the package with `npm install`
+
+You can run tests with `npm test`
