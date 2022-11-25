@@ -1,3 +1,9 @@
+/**
+ * Generates a sales report for the last 12 months based on the monthly data given in the database
+ * 
+ * @param {Object} database The database of monthly data. The keys are the years, and the values are objects with the keys being the months (1-12) and the values being the sales
+ * @returns The sales report for the last 12 months
+ */
 export function getLast12MonthReport(database) {
     // TODO: This method does not work, I don't know why.
     // Please have a look, I really don't see anything wrong.
