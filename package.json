@@ -18,5 +18,8 @@
   "homepage": "https://github.com/cube45-academy/challenge-bug-tracking#readme",
   "devDependencies": {
     "jasmine": "^4.5.0"
+  },
+  "dependencies": {
+    "node.js": "*"
   }
 }
