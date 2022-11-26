@@ -26,7 +26,9 @@ for(const testLeapYear of [false, true]) {
                 jasmine.clock().uninstall();
             })
         }
-
+        it('must have exactly 12 month', () => {
+            expect(getLast12MonthReport(generateDatabase()).length).toBe(12)
+        })
         it('must not have any undefined month', () => {
             expect(getLast12MonthReport(generateDatabase()).some(x => x === undefined)).toBe(false)
         })
