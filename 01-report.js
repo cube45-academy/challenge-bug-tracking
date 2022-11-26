@@ -12,14 +12,18 @@ export function getLast12MonthReport(database) {
     // Also, reading the doc might be helpful :D
     const today = new Date();
     const d = new Date();
+    if(today.getDate() === 29 && today.getMonth() === 1) {
+        today.setDate(10);
+        d.setDate(10);
+    }
     const year = d.getFullYear();
     // Get back one year
     d.setFullYear(year - 1);
     const data = [];
     while(d < today) {
         const month = d.getMonth();
-        data.push(database[year][month]);
-        d.setMonth(month + 1);
+        data.push(database[year][month + 1]);
+        d.setMonth(month +1);
     }
     return data;
 }
