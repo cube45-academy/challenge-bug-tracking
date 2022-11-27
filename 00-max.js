@@ -1,3 +1,4 @@
 export function max(array) {
-    // TODO: implement max function
+  if (!array || array.length === 0) return undefined;
+  else return Math.max(...array);
 }
