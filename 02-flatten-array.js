@@ -22,9 +22,7 @@ export function flattenArray(arr) {
     return depth > 0
       ? arr.reduce(
           (acc, curr) =>
-            acc.concat(
-              Array.isArray(curr) ? flattenArray(curr, depth - 1) : curr
-            ),
+            acc.concat(Array.isArray(curr) ? flatArray(curr, depth - 1) : curr),
           []
         )
       : arr.slice();
