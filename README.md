@@ -9,4 +9,11 @@ Some bugs are really nasty, and they disappear when you try to attach a debugger
 
 Good luck !
 
-Now, pick the branch corresponding of the language of your choice, and start hunting those bugs !
+## The C# challenge
+This challenge uses NUnit to test the code in the .cs files.
+
+You need to have dotnet installed. You can use Visual Studio but this is not mandatory, Visual Studio Code should be enough (or even notepad or vi 😂 ).
+
+You can run tests with `dotnet test`
+
+You will need to fix the .cs files under `ChallengeBugTracking`. You may not commit any change to the files in the `ChallengeBugTracking.Tests` folder (but you can edit the file temporarily if you want to try things out).
