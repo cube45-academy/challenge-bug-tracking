@@ -6,7 +6,7 @@ function generateDatabase() {
     const d = new Date();
     for(let y = d.getFullYear() - 2; y <= d.getFullYear(); y++) {
         database[y] = {};
-        for(let m = 1; m <= 12; m++) {
+        for(let m = 1; m <= ((y === d.getFullYear()) ? d.getMonth() : 12); m++) {
             database[y][m] = Math.floor(Math.random() * 1000);
         }
     }
