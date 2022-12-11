@@ -20,7 +20,7 @@ public class Challenge3Tests
             }},
             new Challenge3.Leaf { Value = "array" }
         };
-        Assert.That(Challenge3.FlattenArray(array), Is.EquivalentTo(new[] { "this", "is", "an", "array" }));
+        Assert.That(Challenge3.FlattenArray(array), Is.EqualTo(new[] { "this", "is", "an", "array" }));
     }
 
     [Test]
@@ -42,6 +42,6 @@ public class Challenge3Tests
             }},
             new Challenge3.Leaf { Value = "array" }
         };
-        Assert.That(Challenge3.FlattenArray(array), Is.EquivalentTo(new[] { "this", "is", "a", "super", "nested", "array" }));
+        Assert.That(Challenge3.FlattenArray(array), Is.EqualTo(new[] { "this", "is", "a", "super", "nested", "array" }));
     }
 }
