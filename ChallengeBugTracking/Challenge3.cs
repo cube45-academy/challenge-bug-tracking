@@ -19,17 +19,14 @@ public class Challenge3 {
     /// </summary>
     /// <param name="array">The array to flatten</param>
     public static string[] FlattenArray(IEnumerable<Node> nodes) {
-        // TODO: ISSUE #4242 : Our customer reported that this method doesn't work in the case of deeply nested arrays
-        // I added the test case to the test file, but I'm not sure how to fix it. Can you help?
-        var result = new List<string>();
+        List<string> output = new();
         foreach(var node in nodes) {
             if(node is Branch b) {
-                result.AddRange(b.Children.Cast<Leaf>().Select(l => l.Value));
+                output.AddRange(FlattenArray(b.Children));
             } else if(node is Leaf l) {
-                result.Add(l.Value);
+                output.Add(l.Value);
             }
         }
-
-        return result.ToArray();
+        return output.ToArray();
     }
 }
